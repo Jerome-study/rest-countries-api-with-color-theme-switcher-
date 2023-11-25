@@ -17,12 +17,12 @@ export const Navbar = () => {
                     <div className="d-flex gap-2 align-items-center" onClick={() => {isLightModeOn? setIsLightModeOn(false): setIsLightModeOn(true)}}>
                         {isLightModeOn?<MoonOutline height="40px"
                         width="25px" 
-                        color = "white"
+                        color = "black"
                         />:<SunnyOutline height="40px"
                         width="25px"
-                        color="black" 
+                        color="white" 
                         />}
-                        <span className="dark-mode-title">{isLightModeOn? "Light Mode": "Dark Mode"}</span>
+                        <span className="dark-mode-title">{isLightModeOn? "Dark Mode": "Light Mode"}</span>
                     </div>
                 </div>
             </nav>
