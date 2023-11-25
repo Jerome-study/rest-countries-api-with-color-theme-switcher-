@@ -88,8 +88,8 @@ export const Search = () => {
                     
                 </div>
                 <div  className="dropdown  w-75 " style={{maxWidth:"18rem"}}>
-                    <button className={isLightModeOn?"region-btn border btn py-2 px-4 w-100 text-start bg-white d-flex align-items-center justify-content-between":
-                        "region-btn shadow-sm btn py-2 px-4 w-100 text-start bg-white d-flex align-items-center justify-content-between dark-mode-1"} type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <button className={isLightModeOn?"region-btn border btn py-2 px-4 w-100 text-start bg-white d-flex align-items-center justify-content-between py-xl-3 px-xl-4":
+                        "region-btn shadow-sm btn py-2 px-4 w-100 text-start bg-white d-flex align-items-center justify-content-between dark-mode-1  py-xl-3 px-xl-4"} type="button" data-bs-toggle="dropdown" aria-expanded="false">
                             <span>{regionName?regionName: "Filter by Region"}</span>
                             <FontAwesomeIcon icon={faChevronDown} />
                     </button>
