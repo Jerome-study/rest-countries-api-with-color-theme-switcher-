@@ -1,38 +1,141 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,300;6..12,600;6..12,800&display=swap');
+
+
+:root {
+    --clr-dark-element: hsl(209, 23%, 22%);
+    --clr-dark-bg: hsl(207, 26%, 17%);
+    --clr-dark-text :hsl(200, 15%, 8%);
+    --clr-ligh-input: hsl(0, 0%, 52%);
+    --clr-light-bg: hsl(0, 0%, 98%);
+    --clr-light-text: hsl(0, 0%, 100%);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.dark-mode-1 {
+    background: var(--clr-dark-element) !important;
+    color: var(--clr-light-text) !important;
+    border-color: transparent;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.dark-mode-1::placeholder {
+    color: var(--clr-light-text) !important;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.dark-mode-1-main {
+    background-color: var(--clr-dark-bg) !important;
+    color: var(--clr-ligh-input) !important;
+    border-color: transparent;
 }
 
-.App-link {
-  color: #61dafb;
+
+
+
+
+
+
+body {
+    font-family: "Nunito Sans";
+    color: var(--clr-dark-text) !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.has-search .form-control {
+    padding-left: 4.375rem;
+    font-size: 14px;
+    color-scheme: dark light;
 }
+
+.has-search .form-control-feedback {
+    padding-top: .5rem;
+    padding-left: 2rem;
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
+    font-size: 18px;
+}
+
+.display-block {
+    display: block;
+}
+
+.title-logo {
+    font-weight: 800;
+    font-size: 18px;
+}
+
+.dark-mode-title {
+    font-weight: 600;
+    font-size: 16px;
+}
+
+
+.region-btn {
+    font-weight: 600;
+}
+
+
+.card-style {
+    font-family: "Nunito Sans";
+
+}
+
+.card-body h5 {
+    font-weight: 800;
+}
+
+
+
+.card-body p, .country-details p {
+    color: var(--clr-dark-text);
+    font-weight: 300;
+    font-size: 15px;
+}
+
+.card-body span, .country-details span {
+    color: var(--clr-dark-text);
+    font-weight: 600;
+    font-size: 18px;
+    margin-right: .1rem;
+}
+
+
+.light-text {
+    color: var(--clr-light-text) !important;
+}
+
+.light-input {
+    color: var(--clr-ligh-input) !important;
+}
+
+.light-98 {
+    color: var(--clr-light-bg) !important;
+}
+
+.card {
+    cursor: pointer;
+    transition:all 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.country-details {
+    font-family: "Nunito sans";
+}
+
+.country-details h5 {
+    font-weight: 800;
+    font-size: 36px;
+}
+
+.country-details .h5 {
+    font-weight: 800;
+    font-size: 18px;
+}
+
