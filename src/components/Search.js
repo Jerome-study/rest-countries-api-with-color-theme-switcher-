@@ -74,7 +74,7 @@ export const Search = () => {
 
     return(
         <>
-            <div className="container d-flex justify-content-between  flex-lg-row flex-column flex-md-column flex-sm-column mt-2 mb-4 mb-md-3 mb-lg-3  ">
+            <div className="container d-flex justify-content-between  flex-lg-row flex-column flex-md-column flex-sm-column mt-2 mb-4 mb-md-3 mb-lg-3 my-xl-5 ">
                 <div  className="form-group has-search w-100 mb-3"  style={{maxWidth: "25rem"}}>
                     <span className="fa  fa-search form-control-feedback"></span>
                     <input type="text" className={isLightModeOn?"shadow-sm py-3 rounded form-control mb-1":"shadow-sm py-3 rounded form-control dark-mode-1 mb-1"}   placeholder="Search for a country..."  onChange={(e) =>{setSearchBar(e.target.value); setSearchFilterOn(true); searchCountry(e.target.value);} }    />

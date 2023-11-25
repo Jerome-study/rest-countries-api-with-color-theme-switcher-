@@ -15,12 +15,12 @@ export const Navbar = () => {
                 <div className="container">
                     <a className={isLightModeOn?"navbar-brand title-logo":"navbar-brand title-logo dark-mode-1"} href="/">Where in the World?</a>
                     <div className="d-flex gap-2 align-items-center" onClick={() => {isLightModeOn? setIsLightModeOn(false): setIsLightModeOn(true)}}>
-                        {isLightModeOn?<SunnyOutline height="40px"
-                        width="25px"
-                        color="black" 
-                        /> : <MoonOutline height="40px"
+                        {isLightModeOn?<MoonOutline height="40px"
                         width="25px" 
                         color = "white"
+                        />:<SunnyOutline height="40px"
+                        width="25px"
+                        color="black" 
                         />}
                         <span className="dark-mode-title">{isLightModeOn? "Light Mode": "Dark Mode"}</span>
                     </div>

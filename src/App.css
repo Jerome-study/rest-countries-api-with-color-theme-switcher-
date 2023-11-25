@@ -31,7 +31,11 @@
 
 
 
-
+@media(min-width: 968px) {
+    .title-logo {
+        font-size: 28px;
+    }
+}
 
 body {
     font-family: "Nunito Sans";
